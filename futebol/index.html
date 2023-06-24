@@ -1,0 +1,253 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="../css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    
+    <nav class="navbar bg-dark navbar-dark">
+        <div class="container-fluid">
+            <!-- hamburguer -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/adivinhacao/index.html">Adivinha numero 1 - 31</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/futebol/index.html">Adivinha time</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Grupo 3</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Grupo 4</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contato</a>
+                    </li>
+                </ul>
+            </div>
+
+            <form class="d-flex">
+                <input class="form-control me-2" type="text" placeholder="Procure">
+                <button class="btn btn-primary" type="button">Aqui</button>
+            </form>
+        </div>
+    </nav>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+
+
+    <div class="container">
+        <div class="text-center">
+            <h1 class="mt-4">Jogo da Adivinhação de imagens</h1>
+            <form name="formAdivinha" method="get" class="mt-4">
+                <h2 class="mb-4">Escolha um dos Times abaixo.</h2>
+                <br />
+
+                <!-- CARTA PRINCIPAL -->
+                <div class="d-flex justify-content-center align-items-center">
+                    <table>
+                        <tr>
+                            <td ><img src="../imagens/times/1.png" width="117px"; height="104px"></td>
+                            <td><img src="../imagens/times/2.png" width="117px"; height="104px"></td>
+                            <td><img src="../imagens/times/3.png" width="117px"; height="104px"></td>
+                            <td><img src="../imagens/times/4.png" width="117px"; height="104px"></td>
+							<td><img src="../imagens/times/5.png" width="117px"; height="104px"></td>
+                        </tr>
+                        <tr>
+                            <td ><img src="../imagens/times/6.png" width="117px"; height="104px"></td>
+                            <td><img src="../imagens/times/7.png" width="117px"; height="104px"></td>
+                            <td><img src="../imagens/times/8.png" width="117px"; height="104px"></td>
+                            <td><img src="../imagens/times/9.png" width="117px"; height="104px"></td>
+							<td><img src="../imagens/times/10.png" width="117px"; height="104px"></td>
+                        </tr>
+                        <tr>
+                            <td ><img src="../imagens/times/11.png" width="117px"; height="104px"></td>
+                            <td><img src="../imagens/times/12.png" width="117px"; height="104px"></td>
+                            <td><img src="../imagens/times/13.png" width="117px"; height="104px"></td>
+                            <td><img src="../imagens/times/14.png" width="117px"; height="104px"></td>
+							<td><img src="../imagens/times/15.png" width="117px"; height="104px"></td>
+                        </tr>
+                    </table>
+                </div>
+                <br />
+			<marquee ><h2> Escolha abaixo as cartas em que o time que voce escolheu aparece.</h2></marquee>
+
+                <div class="d-flex justify-content-center align-items-center">
+                    <table>
+                        <tr>
+                            <td><img src="../imagens/times/15.png" width="117px"; height="104px"></td>
+                            <td ><img src="../imagens/times/1.png" width="117px"; height="104px"></td>
+                            <td><img src="../imagens/times/7.png" width="117px"; height="104px"></td>
+                            <td><img src="../imagens/times/5.png" width="117px"; height="104px"></td>
+                        </tr>
+                        <tr>
+                            <td><img src="../imagens/times/3.png" width="117px"; height="104px"></td>
+                            <td ><img src="../imagens/times/11.png" width="117px"; height="104px"></td>
+                            <td><img src="../imagens/times/9.png" width="117px"; height="104px"></td>
+                            <td><img src="../imagens/times/13.png" width="117px"; height="104px"></td>
+                        </tr>
+                    </table>
+
+                    <div class="form-check form-switch ml-2">
+                        <input class="form-check-input" type="checkbox" name="op1" id="switchOp1"
+                            onchange="updateLabel('switchOp1', 'switchLabel1')">
+                        <label class="form-check-label" for="switchOp1" id="switchLabel1">Não</label>
+                    </div>
+                </div>
+                <br />
+
+                <div class="d-flex justify-content-center align-items-center">
+                    <table>
+                        <tr>
+                            <td><img src="../imagens/times/7.png" width="117px"; height="104px"></td>
+                            <td><img src="../imagens/times/15.png" width="117px"; height="104px"></td>
+                            <td><img src="../imagens/times/2.png" width="117px"; height="104px"></td>
+                            <td><img src="../imagens/times/14.png" width="117px"; height="104px"></td>
+                        </tr>
+                        <tr>
+                            <td><img src="../imagens/times/3.png" width="117px"; height="104px"></td>
+                            <td><img src="../imagens/times/10.png" width="117px"; height="104px"></td>
+                            <td ><img src="../imagens/times/11.png" width="117px"; height="104px"></td>
+                            <td ><img src="../imagens/times/6.png" width="117px"; height="104px"></td>
+                        </tr>
+                    </table>
+
+                    <div class="form-check form-switch ml-2">
+                        <input class="form-check-input" type="checkbox" name="op2" id="switchOp2"
+                            onchange="updateLabel('switchOp2', 'switchLabel2')">
+                        <label class="form-check-label" for="switchOp2" id="switchLabel2">Não</label>
+                    </div>
+                </div>
+                <br />
+
+                <div class="d-flex justify-content-center align-items-center">
+                    <table>
+                        <tr>
+                            <td><img src="../imagens/times/8.png" width="117px"; height="104px"></td>
+                            <td><img src="../imagens/times/13.png" width="117px"; height="104px"></td>
+                            <td><img src="../imagens/times/9.png" width="117px"; height="104px"></td>
+                            <td><img src="../imagens/times/14.png" width="117px"; height="104px"></td>
+                        </tr>
+                        <tr>
+                            <td><img src="../imagens/times/12.png" width="117px"; height="104px"></td>
+                            <td ><img src="../imagens/times/11.png" width="117px"; height="104px"></td>
+                            <td><img src="../imagens/times/10.png" width="117px"; height="104px"></td>
+                            <td><img src="../imagens/times/15.png" width="117px"; height="104px"></td>
+                        </tr>
+                    </table>
+
+                    <div class="form-check form-switch ml-2">
+                        <input class="form-check-input" type="checkbox" name="op3" id="switchOp3"
+                            onchange="updateLabel('switchOp3', 'switchLabel3')">
+                        <label class="form-check-label" for="switchOp3" id="switchLabel3">Não</label>
+                    </div>
+
+                </div>
+                <br />
+
+                <div class="d-flex justify-content-center align-items-center">
+                    <table>
+                        <tr>
+                            <td><img src="../imagens/times/7.png" width="117px"; height="104px"></td>
+                            <td><img src="../imagens/times/5.png" width="117px"; height="104px"></td>
+                            <td><img src="../imagens/times/4.png" width="117px"; height="104px"></td>
+                            <td><img src="../imagens/times/15.png" width="117px"; height="104px"></td>
+                        </tr>
+                        <tr>
+                            <td><img src="../imagens/times/13.png" width="117px"; height="104px"></td>
+                            <td><img src="../imagens/times/12.png" width="117px"; height="104px"></td>
+                            <td><img src="../imagens/times/14.png" width="117px"; height="104px"></td>
+                            <td ><img src="../imagens/times/6.png" width="117px"; height="104px"></td>
+                        </tr>
+                    </table>
+
+                    <div class="form-check form-switch ml-2">
+                        <input class="form-check-input" type="checkbox" name="op4" id="switchOp4"
+                            onchange="updateLabel('switchOp4', 'switchLabel4')">
+                        <label class="form-check-label" for="switchOp4" id="switchLabel4">Não</label>
+                    </div>
+                </div>
+        </div>
+
+        <!-- BOTÕES DE JOGO -->
+        <div class="text-center mt-4">
+            <input type="button" name="verifica" value="Ver o Resultado" onclick="respostas()" class="btn btn-primary">
+            <input type="reset" name="limpar" value="Limpar Respostas" class="btn btn-secondary">
+        </div>
+        </form>
+    </div>
+
+    <!-- JOGO JS -->
+    <script>
+        function updateLabel(switchId, labelId) {
+            var switchElement = document.getElementById(switchId);
+            var labelElement = document.getElementById(labelId);
+
+            if (switchElement.checked) {
+                labelElement.textContent = "Sim";
+            } else {
+                labelElement.textContent = "Não";
+            }
+        }
+    </script>
+    <script>
+       function respostas(){ 
+       
+       var posicao=0;
+	  
+       var resp1=document.formAdivinha.op1.checked;
+	   var resp2=document.formAdivinha.op2.checked;
+	   var resp3=document.formAdivinha.op3.checked;
+	   var resp4=document.formAdivinha.op4.checked;
+
+		if(resp1) posicao=posicao+1;
+		if(resp2) posicao=posicao+2; 
+		if(resp3) posicao=posicao+8;
+		if(resp4) posicao=posicao+4;
+		 
+		if(posicao>0)
+		{
+            
+            document.write('<div style="background-color: #ccc">');
+            document.write('<center><h2>O time  que você pensou foi: </h2><br />');
+
+		if(posicao ==1) document.write('<img src="../imagens/times/1.png" width="117px"; height="104px" /> ');
+		if(posicao ==2) document.write('<img src="../imagens/times/2.png" width="117px"; height="104px" /> ');
+		if(posicao ==3) document.write('<img src="../imagens/times/3.png" width="117px"; height="104px" /> ');
+		if(posicao ==4) document.write('<img src="../imagens/times/4.png" width="117px"; height="104px" /> ');
+		if(posicao ==5) document.write('<img src="../imagens/times/5.png" width="117px"; height="104px" /> ');
+		if(posicao ==6) document.write('<img src="../imagens/times/6.png" width="117px"; height="104px" /> ');
+		if(posicao ==7) document.write('<img src="../imagens/times/7.png" width="117px"; height="104px" /> ');
+		if(posicao ==8) document.write('<img src="../imagens/times/8.png" width="117px"; height="104px" /> ');
+		if(posicao ==9) document.write('<img src="../imagens/times/9.png" width="117px"; height="104px" /> ');
+		if(posicao ==10) document.write('<img src="../imagens/times/10.png" width="117px"; height="104px" /> ');
+		if(posicao ==11) document.write('<img src="../imagens/times/11.png" width="117px"; height="104px" /> ');
+		if(posicao ==12) document.write('<img src="../imagens/times/12.png" width="117px"; height="104px" /> ');
+		if(posicao ==13) document.write('<img src="../imagens/times/13.png" width="117px"; height="104px" /> ');
+		if(posicao ==14) document.write('<img src="../imagens/times/14.png" width="117px"; height="104px" /> ');
+		if(posicao ==15) document.write('<img src="../imagens/times/15.png" width="117px"; height="104px" /> ');
+		document.write('<br /></br />');
+		document.write('<br /><br /><a href=""><h3>Tentar Novamente!!!</h3></a>');
+		document.write('</center> </div>');
+		} else alert('Você não escolheu nenhuma carta');
+		 }
+    </script>
+</body>
+</html>

@@ -1,22 +1,38 @@
-  @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Nunito:ital,wght@0,200;0,400;1,700&family=Roboto:wght@300;400&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&family=Luckiest+Guy&family=Nunito:ital,wght@0,200;0,400;1,700&family=Roboto:wght@300;400&display=swap');
 
 body {
     color: rgb(71, 71, 207);
     background-color: rgb(188, 184, 184);
-    /* font-family: 'Luckiest Guy', cursive, 'Nunito', 'Roboto', sans-serif; */
-    font-family: 'Nunito', 'Roboto', sans-serif;
+    font-family: 'Belanosima', 'Luckiest Guy', cursive, 'Nunito', 'Roboto', 'sans-serif';
+
 }
 
 table {
-    border-radius: 20px;
-    /* border-collapse: collapse; */
+    background: rgba(255, 255, 255, .25);
+    border-radius: 12px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(1.1px);
+    -webkit-backdrop-filter: blur(1.1px);
+    border: 1px unset rgba(255, 255, 255, 0.74);
 }
-        
-table, th, td {
-    border: .75px solid black;
-    padding: 5px;
+
+td {
+    color: rgb(32, 31, 31);
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 20px;
+    box-shadow: 0 2px 15 rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2.1px);
+    -webkit-backdrop-filter: blur(2.1px);
+    border: .75px unset rgba(255, 255, 255, 0.74);
 }
 
 .result {
-    color: azure;
+    color: rgb(56, 56, 56);
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(1.1px);
+    -webkit-backdrop-filter: blur(1.1px);
+    border: 1px unset rgba(255, 255, 255, 0.74);
 }
