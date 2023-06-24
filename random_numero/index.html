@@ -17,25 +17,89 @@
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>
     <link href="../css/style.css" rel="stylesheet">
-    <link href="../css/num_random.css" rel="stylesheet">
-    
+    <link href="js.js">
 </head>
 
 <body>
-  <script type="text/javascript" src="num_random.js"></script>
-  <div class="container">
-    <h1 class="page-title">
-      Mentalista
-    </h1>
-    <img src="" class="page-logo" alt=""><br>
-    <p class="page-subtitle">
-      Digite um número de 0 a 10
-    </p>
-    <input type="number" id="valor" /><br>
-    <button type="submit" onclick="Chutar()">Chutar</button>
-    <h2 class="resultado" id="resultado"></h2>
-    <h3 class="revelacao" id="revelacao"></h3>
-  </div>
-</body>
+    <!-- background -->
+    <div class="background">
 
+
+        <!-- menu inicio -->
+        <nav class="navbar bg-dark navbar-dark">
+            <div class="container-fluid">
+                <!-- hambure -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="adivinhacao/">Adivinha Número</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="futebol/">Adivinha o Time escolhido</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="random_numero/">Adivinhe o número que o PC escolheu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="super_trunfo/">Super-Trunfo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sonico/">Sonic</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sobre.html">Sobre</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- fota -->
+                <a href="index.html">Os melhores jogos você encontra aqui</a>
+                <!-- search-bar -->
+                <form class="d-flex">
+                    <input class="form-control me-2" type="text" placeholder="Procure">
+                    <button class="btn btn-primary" type="button">Aqui</button>
+                </form>
+            </div>
+        </nav>
+    <div class="container text-center">
+    <h1>Adivinhe o número!</h1>
+
+    <p>Tente adivinhar um número entre 1 e 100:</p>
+
+    <input type="number" id="guessInput">
+    <button onclick="checkGuess()">Verificar</button>
+
+    <p id="resultText"></p>
+
+    <script>
+        // Gerar um número aleatório entre 1 e 100
+        const randomNumber = Math.floor(Math.random() * 100) + 1;
+
+        function checkGuess() {
+            // Obter o valor inserido pelo usuário
+            const userGuess = parseInt(document.getElementById('guessInput').value);
+
+            if (isNaN(userGuess)) {
+                // Caso o valor inserido não seja um número válido
+                document.getElementById('resultText').textContent = 'Por favor, insira um número válido.';
+            } else if (userGuess < 1 || userGuess > 100) {
+                // Caso o valor inserido esteja fora da faixa válida
+                document.getElementById('resultText').textContent = 'Por favor, insira um número entre 1 e 100.';
+            } else if (userGuess < randomNumber) {
+                // Caso o valor inserido seja menor que o número aleatório
+                document.getElementById('resultText').textContent = 'Tente um número maior!';
+            } else if (userGuess > randomNumber) {
+                // Caso o valor inserido seja maior que o número aleatório
+                document.getElementById('resultText').textContent = 'Tente um número menor!';
+            } else {
+                // Caso o usuário acerte o número
+                document.getElementById('resultText').textContent = 'Parabéns! Você acertou o número!';
+            }
+        }
+    </script>
+    </div>
+</body>
 </html>

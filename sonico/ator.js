@@ -1,5 +1,5 @@
 //ator variaveis
-let xAtor = 85;
+let xAtor = 80;
 let yAtor = 366;
 let xControle = 360;
 let yControle = 150;
