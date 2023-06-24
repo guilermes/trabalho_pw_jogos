@@ -26,13 +26,13 @@
                         <a class="nav-link" href="../">Pagina Inicial</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/adivinhacao/index.html">Adivinha numero 1 - 31</a>
+                        <a class="nav-link" href="../adivinhacao/">Adivinha numero 1 - 31</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/futebol/index.html">Adivinha time</a>
+                        <a class="nav-link" href="../futebol/index.html">Adivinha time</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/sonico/">Sonic</a>
+                        <a class="nav-link" href="../sonico/">Sonic</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Grupo 4</a>
@@ -290,10 +290,7 @@
             if (resp5) acertos += 16;
 
             if (acertos > 0) {
-                var resultDiv = document.createElement('div');
-                resultDiv.style.backgroundColor = '#CCCCCC';
-                resultDiv.innerHTML = '<center><h2 class="result">O número que você pensou foi: ' + acertos + '</h2><br /><br /><br /><br /><a href=""><h3>Tentar Novamente!!!</h3></a></center>';
-                document.body.appendChild(resultDiv);
+                alert('Você pensou no numero '+acertos);
             } else {
                 alert('Você não escolheu nenhuma carta');
             }
