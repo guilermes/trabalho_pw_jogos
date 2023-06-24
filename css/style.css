@@ -1,11 +1,10 @@
-  @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Roboto&display=swap');
-*{
-    font-family: 'Nunito Sans', 'Roboto', 'sans-serif';
-}
+  @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Nunito:ital,wght@0,200;0,400;1,700&family=Roboto:wght@300;400&display=swap');
+
 body {
     color: rgb(71, 71, 207);
     background-color: rgb(188, 184, 184);
-
+    /* font-family: 'Luckiest Guy', cursive, 'Nunito', 'Roboto', sans-serif; */
+    font-family: 'Nunito', 'Roboto', sans-serif;
 }
 
 table {
