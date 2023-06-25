@@ -9,7 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <link href="../css/style.css" rel="stylesheet">
-
+    <title>Adivinhação do 1 ao 31</title>
 </head>
 
 <body>
@@ -290,7 +290,10 @@
             if (resp5) acertos += 16;
 
             if (acertos > 0) {
-                alert('Você pensou no numero '+acertos);
+                // alert('Você pensou no numero '+acertos);
+                <div class="alert alert-success" role="alert">
+                Você pensou no número + 'acertos'
+                </div>
             } else {
                 alert('Você não escolheu nenhuma carta');
             }
