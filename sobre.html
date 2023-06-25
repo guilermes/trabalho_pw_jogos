@@ -1,0 +1,215 @@
+<!doctype html>
+<html>
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <link href="css/index.css" rel="stylesheet">
+    <link href="js.js">
+    <title>Nossa página de jogos</title>
+</head>
+
+<body>
+    <!-- background -->
+    <div class="background">
+
+
+        <!-- menu inicio -->
+        <nav class="navbar bg-dark navbar-dark">
+            <div class="container-fluid">
+                <!-- hambure -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="adivinhacao/">Adivinha Número</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="futebol/">Adivinha o Time escolhido</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="random_numero/">Adivinhe o número que o PC escolheu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="super_trunfo/">Super-Trunfo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sonico/">Sonic</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sobre.html">Sobre</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- fota -->
+                <a href="index.html">Os melhores jogos você encontra aqui</a>
+                <!-- search-bar -->
+                <form class="d-flex">
+                    <input class="form-control me-2" type="text" placeholder="Procure">
+                    <button class="btn btn-primary" type="button">Aqui</button>
+                </form>
+            </div>
+        </nav>
+        
+        <!-- light/dark mode switch -->
+        <div>
+            <!-- Rounded switch -->
+            <label class="switch" >
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+        </div>
+
+    </br>
+        
+        <!-- usando o container fluid -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-3">
+                    <div class="accordion" id="accordionExample">
+                        <div class="card" style="background-color: blue;">
+                        <div class="card-header" id="headingOne" style="background-color: black;">
+                            <h5 class="mb-0">
+                            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseOne" aria-controls="collapseOne">
+                            Gabriel
+                            </button>
+                            </h5>
+                        </div>
+                    
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="card-body">
+                            <img src="imagens/Gabriel.png" width="300px">
+                            </div>
+                        </div>
+                        </div>
+                        <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h5 class="mb-0">
+                            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Rodrigo
+                            </button>
+                            </h5>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                            <div class="card-body">
+                            <img src="imagens/Rodrigo.png"width="300px">
+                            </div>
+                        </div>
+                        </div>
+                        <div class="card">
+                        <div class="card-header" id="headingThree">
+                            <h5 class="mb-0">
+                            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Guilherme
+                            </button>
+                            </h5>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                            <div class="card-body">
+                            <img src="imagens/Guilherme.png"width="300px">
+                            </div>
+                        </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingfour">
+                            <h5 class="mb-0">
+                                <button class="btn btn-primary" type="button"  data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                Rhuan
+                                </button>
+                            </h5>
+                            </div>
+                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <img src="imagens/Rhuan.png"width="300px">
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </br>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-3">
+
+                    <p>
+                        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">
+                          Rodrigo
+                        </button>
+
+                        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
+                            Rhuan
+                          </button>
+
+                          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3">
+                            Guilherme
+                          </button>
+
+                          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample4">
+                            Gabriel
+                          </button>
+                    </p>
+                    <div class="collapse" id="collapseExample1">
+                        <div class="card card-body">
+                            <img src="imagens/Rodrigo.png">
+                        </div>
+                    </div>
+
+                    <div class="collapse" id="collapseExample2">
+                        <div class="card card-body">
+                            <img src="imagens/Rhuan.png">
+                        </div>
+                    </div>
+
+                    <div class="collapse" id="collapseExample3">
+                        <div class="card card-body">
+                            <img src="imagens/Guilherme.png">
+                        </div>
+                    </div>
+
+                    <div class="collapse" id="collapseExample4">
+                        <div class="card card-body">
+                          <img src="imagens/Gabriel.png">
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+	<!-- jQuery, Popper.js, Bootstrap JS -->	
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="js/bootstrap.min.js"></script>
+			
+			
+			
+
+
+    </div>
+</body>
+
+</html>
