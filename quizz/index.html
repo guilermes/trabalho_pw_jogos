@@ -1,0 +1,252 @@
+<!doctype html>
+<html>
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <link href="../css/quizz.css" rel="stylesheet">
+    <link href="../js/bootstrap.min.js">
+    <link href="js.js">
+    <title>Nossa página de jogos</title>
+</head>
+
+<body background="quizz.jpg" text="Darkblue">
+    <!-- background -->
+    <div class="background">
+        
+        <!-- menu inicio -->
+        <nav class="navbar bg-dark navbar-dark">
+            <div class="container-fluid">
+                <!-- hambure -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../">Pagina Inicial</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../adivinhacao/">Adivinha Número</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../futebol/">Adivinha o Time escolhido</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../random_numero/">Adivinhe o número que o PC escolheu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../super_trunfo/">Super-Trunfo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../sonico/">Sonic</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../quizz/">Quizz</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../sobre.html">Sobre</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- fota -->
+                <a href="../index.html">Os melhores jogos você encontra aqui</a>
+                <!-- search-bar -->
+                <form class="d-flex">
+                    <input class="form-control me-2" type="text" placeholder="Procure">
+                    <button class="btn btn-primary" type="button">Aqui</button>
+                </form>
+            </div>
+        </nav>
+        
+<script>
+    var pergunta=[];//indica  que é uma variáve array  -  vetor
+								pergunta[0] = "Como podemos definir um Algoritmo ?";
+								pergunta[1] = "Qual dos seguintes itens possui apenas tipos válidos usados em lógica de programação (tipos primitivos) ?";
+								pergunta[2] = "Quais são todos os estados possíveis que um tipo lógico pode assumir ?";
+								pergunta[3] = "O que é uma Variável ?";
+								pergunta[4] = "Como funciona um laço while (enquanto) ?";
+								pergunta[5] = "Para que serve o operador aritmético de módulo (%) ?";
+								pergunta[6] = "Qual a diferença entre os operadores lógicos E (AND) e OU (OR) ?";
+								pergunta[7] = "Qual dos seguintes é um operador de concatenação de strings válido ?";
+								pergunta[8] = "Para que serve uma biblioteca ?";
+								pergunta[9] = "Qual das seguintes afirmações sobre arrays (vetores) é verdadeira?";
+								
+</script>
+
+<form name="formQuizz" method="get">
+
+<div class="container-fluid" style="margin-top: 30px;">
+    
+    <div class="glass">
+        <b>1. Como podemos definir um Algoritmo?</b><br/>
+      <INPUT TYPE="RADIO" NAME="r0" VALUE="Sequência de comandos ordenados, infinitos e ambíguos que são empregados para executar uma tarefa.">Sequência de comandos ordenados, infinitos e ambíguos que são empregados para executar uma tarefa.<br/>
+      <INPUT TYPE="RADIO" NAME="r0" VALUE="Sequência de instruções ordenadas, infinitas e não-ambíguas que são empregadas para executar uma tarefa.">Sequência de instruções ordenadas, infinitas e não-ambíguas que são empregadas para executar uma tarefa.<br/>
+      <INPUT TYPE="RADIO" NAME="r0" VALUE="Sequência de instruções ordenadas, finitas e não-ambíguas que são empregadas para executar uma tarefa.">Sequência de instruções ordenadas, finitas e não-ambíguas que são empregadas para executar uma tarefa.<br/>
+        <INPUT TYPE="RADIO" NAME="r0" VALUE="Sequência de comandos ordenados, infinitos e não-ambíguos que são empregados para executar uma tarefa.">Sequência de comandos ordenados, infinitos e não-ambíguos que são empregados para executar uma tarefa.
+    </div>
+    <div class="glass">
+        <b>2. Qual dos seguintes itens possui apenas tipos válidos usados em lógica de programação (tipos primitivos) ?</b><br/>
+        <INPUT TYPE="RADIO" NAME="r1" VALUE="Inteiro, Temporal, Caractere, Double.">Inteiro, Temporal, Caractere, Double<br/>
+        <INPUT TYPE="RADIO" NAME="r1" VALUE="Lógico, Real, Inteiro, Irracional.">Lógico, Real, Inteiro, Irracional<br/>
+        <INPUT TYPE="RADIO" NAME="r1" VALUE="Inteiro, Lógico, Tipografia, Double.">Inteiro, Lógico, Tipografia, Double<br/>
+          <INPUT TYPE="RADIO" NAME="r1" VALUE="Inteiro, Lógico, Caractere, Double">Inteiro, Lógico, Caractere, Double
+    </div>
+    <div class="glass">
+        <b>3. Quais são todos os estados possíveis que um tipo lógico pode assumir ?</b><br/>
+        <INPUT TYPE="RADIO" NAME="r2" VALUE="
+        Verdadeiro, Duvidoso.">
+        Verdadeiro, Duvidoso.<br/>
+        <INPUT TYPE="RADIO" NAME="r2" VALUE="Falso, Duvidoso, Verdadeiro.">Falso, Duvidoso, Verdadeiro.<br/>
+        <INPUT TYPE="RADIO" NAME="r2" VALUE="Incerto, Certo.">Incerto, Certo.<br/>
+          <INPUT TYPE="RADIO" NAME="r2" VALUE="Verdadeiro, Falso">Verdadeiro, Falso
+    </div>
+    <div class="glass">
+        <b>4. O que é uma Variável?</b><br/>
+        <INPUT TYPE="RADIO" NAME="r3" VALUE="Local na memória CMOS do computador empregado para armazenar de forma temporária os dados que são utilizados pelo programa.">Local na memória CMOS do computador empregado para armazenar de forma temporária os dados que são utilizados pelo programa.<br/>
+        <INPUT TYPE="RADIO" NAME="r3" VALUE="Valor que varia conforme passa o tempo, sendo sempre modificado conforme o programa vai sendo executado.">Valor que varia conforme passa o tempo, sendo sempre modificado conforme o programa vai sendo executado.<br/>
+        <INPUT TYPE="RADIO" NAME="r3" VALUE="Estado lógico de uma constante, que pode variar entre verdadeiro e falso.">Estado lógico de uma constante, que pode variar entre verdadeiro e falso.<br/>
+          <INPUT TYPE="RADIO" NAME="r3" VALUE="Local na memória RAM do computador utilizado para armazenar temporariamente dados que são utilizados pelo programa.">Local na memória RAM do computador utilizado para armazenar temporariamente dados que são utilizados pelo programa.
+    </div>
+    <div class="glass">
+        <b>5. Como funciona um laço while (enquanto) ?</b><br/>
+        <INPUT TYPE="RADIO" NAME="r4" VALUE="Um laço while repete o bloco de código associado enquanto um teste lógico realizado retornar falso.">Um laço while repete o bloco de código associado enquanto um teste lógico realizado retornar falso.<br/>
+        <INPUT TYPE="RADIO" NAME="r4" VALUE="Um laço while não repete o bloco de código associado enquanto um teste lógico realizado retornar verdadeiro.">Um laço while não repete o bloco de código associado enquanto um teste lógico realizado retornar verdadeiro.<br/>
+        <INPUT TYPE="RADIO" NAME="r4" VALUE="Um laço while repete o bloco de código associado um número de vezes específico, determinado em sua declaração.">Um laço while repete o bloco de código associado um número de vezes específico, determinado em sua declaração.<br/>
+          <INPUT TYPE="RADIO" NAME="r4" VALUE="Um laço while repete o bloco de código associado enquanto um teste lógico realizado retornar verdadeiro.">Um laço while repete o bloco de código associado enquanto um teste lógico realizado retornar verdadeiro.
+    </div>
+    <div class="glass">
+        <b>6. Para que serve o operador aritmético de módulo (%) ?</b><br/>
+        <INPUT TYPE="RADIO" NAME="r5" VALUE="
+        Operador que realiza cálculo de porcentagens.">
+        Operador que realiza cálculo de porcentagens.<br/>
+        <INPUT TYPE="RADIO" NAME="r5" VALUE="Realizar cálculos aritméticos de investimentos.">Realizar cálculos aritméticos de investimentos.<br/>
+        <INPUT TYPE="RADIO" NAME="r5" VALUE="Retornar o módulo matemático (valor absoluto).">Retornar o módulo matemático (valor absoluto).<br/>
+          <INPUT TYPE="RADIO" NAME="r5" VALUE="Calcular o resto de uma divisão inteira.">Calcular o resto de uma divisão inteira.
+    </div>
+    <div class="glass">
+        <b>7. Qual a diferença entre os operadores lógicos E (AND) e OU (OR) ?</b><br/>
+        <INPUT TYPE="RADIO" NAME="r6" VALUE="AND retorna V apenas se todas as expressões de entrada forem verdadeiras, e o OR retorna V se ao menos uma delas for verdadeira.">AND retorna V apenas se todas as expressões de entrada forem verdadeiras, e o OR retorna V se ao menos uma delas for verdadeira.<br/>
+        <INPUT TYPE="RADIO" NAME="r6" VALUE="OR retorna V apenas se todas as expressões de entrada forem verdadeiras, e o AND retorna V se ao menos uma delas for verdadeira.">OR retorna V apenas se todas as expressões de entrada forem verdadeiras, e o AND retorna V se ao menos uma delas for verdadeira.<br/>
+        <INPUT TYPE="RADIO" NAME="r6" VALUE="AND retorna F apenas se todas as expressões de entrada forem verdadeiras, e o OR retorna F se ao menos uma das expressões de entrada for verdadeira.">AND retorna F apenas se todas as expressões de entrada forem verdadeiras, e o OR retorna F se ao menos uma das expressões de entrada for verdadeira.<br/>
+          <INPUT TYPE="RADIO" NAME="r6" VALUE="AND retorna F apenas se todas as expressões de entrada forem verdadeiras, e o OR retorna F se todas as expressões de entrada forem verdadeiras.">AND retorna F apenas se todas as expressões de entrada forem verdadeiras, e o OR retorna F se todas as expressões de entrada forem verdadeiras.  
+    </div>
+
+    <div class="glass">
+        <b>8. Qual dos seguintes é um operador de concatenação de strings válido ?</b><br/>
+        <INPUT TYPE="RADIO" NAME="r7" VALUE="+">+<br/>
+        <INPUT TYPE="RADIO" NAME="r7" VALUE="*">*<br/>
+        <INPUT TYPE="RADIO" NAME="r7" VALUE="→">→<br/>
+          <INPUT TYPE="RADIO" NAME="r7" VALUE=";">;
+    </div>
+
+    <div class="glass">
+        <b>9. Para que serve uma biblioteca ?</b><br/>
+        <INPUT TYPE="RADIO" NAME="r8" VALUE="Para que os usuários possam consultar e tomar emprestados livros de assuntos variados.">Para que os usuários possam consultar e tomar emprestados livros de assuntos variados.<br/>
+        <INPUT TYPE="RADIO" NAME="r8" VALUE="Para que os programadores possam consultar a documentação da linguagem com facilidade.">Para que os programadores possam consultar a documentação da linguagem com facilidade.<br/>
+        <INPUT TYPE="RADIO" NAME="r8" VALUE="Uma biblioteca é um programa que permite escrever e testar código-fonte, também conhecida como IDE.">Uma biblioteca é um programa que permite escrever e testar código-fonte, também conhecida como IDE.<br/>
+          <INPUT TYPE="RADIO" NAME="r8" VALUE="Uma biblioteca é um arquivo que organiza código pré-definido para o uso em aplicações.">Uma biblioteca é um arquivo que organiza código pré-definido para o uso em aplicações.
+    </div>
+    <div class="glass">
+        <b>10. Qual das seguintes afirmações sobre arrays (vetores) é verdadeira?"</b><br/>
+        <INPUT TYPE="RADIO" NAME="r9" VALUE="
+        Podemos acessar todos os elementos individuais de uma array por meio de uma posição de índice, começando sempre em 1.">
+        Podemos acessar todos os elementos individuais de uma array por meio de uma posição de índice, começando sempre em 1.<br/>
+        <INPUT TYPE="RADIO" NAME="r9" VALUE="Um array é uma estrutura que pode armazenar uma série de elementos de dados de mesmo tipo.">Um array é uma estrutura que pode armazenar uma série de elementos de dados de mesmo tipo.<br/>
+        <INPUT TYPE="RADIO" NAME="r9" VALUE="Um array é uma estrutura que permite armazenar até 10 elementos de dados, sempre do mesmo tipo.">Um array é uma estrutura que permite armazenar até 10 elementos de dados, sempre do mesmo tipo.<br/>
+          <INPUT TYPE="RADIO" NAME="r9" VALUE="Podemos acessar os elementos individuais de uma array por meio de uma posição de índice, começando em A.">Podemos acessar os elementos individuais de uma array por meio de uma posição de índice, começando em A.
+    </div>
+    
+<!-- BOTÕES DE JOGO -->
+<div class="text-center mt-4">
+    <input type="button" name="verifica" value="Ver o Resultado" onclick="respostas()" class="btn btn-primary">
+    <input type="reset" name="limpar" value="Limpar Respostas" class="btn btn-secondary">
+</div>
+</form>
+  </div>
+
+  <script>
+
+function respostas(){
+       
+       var acertos=0;
+	   
+       var resp0=document.formQuizz.r0.value;
+	   var resp1=document.formQuizz.r1.value;
+	   var resp2=document.formQuizz.r2.value;
+	   var resp3=document.formQuizz.r3.value;
+	   var resp4=document.formQuizz.r4.value;
+	   var resp5=document.formQuizz.r5.value;
+	   var resp6=document.formQuizz.r6.value;
+	   var resp7=document.formQuizz.r7.value;
+	   var resp8=document.formQuizz.r8.value;
+	   var resp9=document.formQuizz.r9.value;
+       var result="";
+
+	   var resposta=[];// resposta é uma variável vetor
+	    resposta[0] = "Sequência de instruções ordenadas, finitas e não-ambíguas que são empregadas para executar uma tarefa.";
+		resposta[1] = "Inteiro, Lógico, Caractere, Double";
+		resposta[2] = "Verdadeiro, Falso";
+		resposta[3] = "Local na memória RAM do computador utilizado para armazenar temporariamente dados que são utilizados pelo programa.";
+		resposta[4] = "Um laço while repete o bloco de código associado enquanto um teste lógico realizado retornar verdadeiro.";
+		resposta[5] = "Calcular o resto de uma divisão inteira.";
+		resposta[6] = "AND retorna V apenas se todas as expressões de entrada forem verdadeiras, e o OR retorna V se ao menos uma delas for verdadeira.";
+		resposta[7] = "+";
+		resposta[8] = "Uma biblioteca é um arquivo que organiza código pré-definido para o uso em aplicações.";
+		resposta[9] = "Um array é uma estrutura que pode armazenar uma série de elementos de dados de mesmo tipo.";
+        
+	     if ((resp0=="")&& (resp1=="")&& (resp2=="")&& (resp3=="")&& (resp4=="") && (resp5=="")&& (resp6=="")&& (resp7=="")&& (resp8=="")&& (resp9=="")) result="no";
+		if(result!= "no")
+		{
+		if(resp0 == resposta[0]) acertos=acertos+1;//acertos++
+		if(resp1 == resposta[1]) acertos=acertos+1;
+		if(resp2 == resposta[2]) acertos=acertos+1;
+		if(resp3 == resposta[3]) acertos=acertos+1;
+		if(resp4 == resposta[4]) acertos=acertos+1;
+		if(resp5 == resposta[5]) acertos=acertos+1;
+		if(resp6 == resposta[6]) acertos=acertos+1;
+		if(resp7 == resposta[7]) acertos=acertos+1;
+		if(resp8 == resposta[8]) acertos=acertos+1;
+		if(resp9 == resposta[9]) acertos=acertos+1;
+		 
+		porcentagem=(acertos/10)*100;
+		alert('Total de Acertos ='+acertos + ' com um total de ' + Math.round(porcentagem)+ ' % '); 
+		if(Math.round(porcentagem)<=31) alert ('Que fraquinho, somente ' + Math.round(porcentagem)+ ' % ');
+		else  if (Math.round(porcentagem)<50) alert ('Por pouco você não chegou a 50%, pois acertou somente ' + Math.round(porcentagem)+ ' % ');
+		else  if (Math.round(porcentagem)<=69) alert ('Fez uma média razoável , entre 50% e 69%,pois acertou ' + Math.round(porcentagem)+ ' % ');
+		else  if (Math.round(porcentagem)<=79) alert ('Está legalzinho , ficou entre 50% e 79%, pois acertou ' + Math.round(porcentagem)+ ' % ');
+		else  if (Math.round(porcentagem)<=89) alert ('Está bem , ficou entre 80% e 89%, pois acertou ' + Math.round(porcentagem)+ ' % ');
+		else  if (Math.round(porcentagem)<=95) alert ('Muito bom , ficou entre 90% e 95%, pois acertou ' + Math.round(porcentagem)+ ' % ');
+		else  alert ('Excelente, você é um expert  ,  pois acertou ' + Math.round(porcentagem)+ ' % ');
+		  
+		
+		
+		 
+		} else alert("Você não escolheu nada !!!")
+		
+		
+		
+		  
+		
+		
+		
+
+                                            
+                                                }
+  </script>
+</body>
+
+</html>
