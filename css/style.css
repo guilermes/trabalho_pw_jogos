@@ -36,3 +36,25 @@ td {
     -webkit-backdrop-filter: blur(1.1px);
     border: 1px unset rgba(255, 255, 255, 0.74);
 }
+
+/* vidro-texto */
+.glass {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(12.5px);
+    -webkit-backdrop-filter: blur(12.5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 10px;
+    margin: 10px;
+    width: 600px;
+    align-self: center;
+  }
+
+  .container-vidro {
+    display: flex;
+    margin-top: 200px;
+    margin-bottom: 100px;
+    margin-left: auto;
+    width: 70%;
+  }
