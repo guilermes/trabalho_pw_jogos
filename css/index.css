@@ -4,7 +4,7 @@
 
 
 .switch {
-    position: relative;
+    position: flex-end;
     display: inline-block;
     width: 60px;
     height: 34px;
@@ -61,4 +61,27 @@
   
   .slider.round:before {
     border-radius: 50%;
+  }
+
+  
+  .dark {
+    background: linear-gradient(236.85deg, #375b86 27.26%, #6b87a9 96.03%);
+  }
+  
+  .dark .container {
+    background: #333439;
+    color: #f6f6f6;
+  }
+  
+  .dark .cartones {
+    background: linear-gradient(-236.85deg, #375b86 27.26%, #6b87a9 96.03%);
+    color: #ecf4ff;
+  }
+  
+  .dark .lista li {
+    padding: 10px;
+  }
+  
+  .dark .lista a {
+    color: #ecf4ff;
   }
