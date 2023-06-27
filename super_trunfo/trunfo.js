@@ -5,9 +5,9 @@
         imagem:
           "https://images.alphacoders.com/619/619885.jpg",
         atributos: {
-          ataque: 5,
-          defesa: 9,
-          magia: 10
+          Ataque: 5,
+          Defesa: 9,
+          Magia: 10
         }
       };
       
@@ -15,9 +15,9 @@
         nome: "Batman",
         imagem: "https://images3.alphacoders.com/129/1297317.jpg",
         atributos: {
-          ataque: 7,
-          defesa: 8,
-          magia: 6
+          Ataque: 7,
+          Defesa: 8,
+          Magia: 6
         }
       };
       
@@ -26,9 +26,9 @@
         imagem:
           "https://images5.alphacoders.com/338/338157.jpg",
         atributos: {
-          ataque: 9,
-          defesa: 8,
-          magia: 2
+          Ataque: 9,
+          Defesa: 8,
+          Magia: 2
         }
       };
 
@@ -37,9 +37,9 @@
         imagem:
           "https://images3.alphacoders.com/124/1248084.jpg",
         atributos: {
-          ataque: 9,
-          defesa: 8,
-          magia: 2
+          Ataque: 9,
+          Defesa: 8,
+          Magia: 2
         }
       };
       
