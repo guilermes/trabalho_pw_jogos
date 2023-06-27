@@ -144,5 +144,7 @@ body {
   }
 
   .resultado-final {
+    margin-top: 100px;
     color: #4747CF;
+    text-align: justify;
   }

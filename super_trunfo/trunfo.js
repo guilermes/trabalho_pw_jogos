@@ -61,6 +61,7 @@
       
         document.getElementById("btnSortear").disabled = true;
         document.getElementById("btnJogar").disabled = false;
+        document.getElementById("btnJogaDnv").disabled = false;
         exibirCartaJogador();
       }
       
@@ -82,17 +83,18 @@
           cartaJogador.atributos[atributoSelecionado] >
           cartaMaquina.atributos[atributoSelecionado]
         ) {
-          htmlResultado = "<p class='resultado-final'>Venceu</p>";
+          htmlResultado = "<h1 class='resultado-final'>Venceu</h1>";
         } else if (
           cartaJogador.atributos[atributoSelecionado] <
           cartaMaquina.atributos[atributoSelecionado]
         ) {
-          htmlResultado = "<p class='resultado-final'>Perdeu</p>";
+          htmlResultado = "<h1 class='resultado-final'>Perdeu</h1>";
         } else {
-          htmlResultado = "<p class='resultado-final'>Empatou</p>";
+          htmlResultado = "<h1 class='resultado-final'>Empatou</h1>";
         }
         divResultado.innerHTML = htmlResultado;
       
+        document.getElementById("btnJogar").disabled = true;
         document.getElementById("btnJogar").disabled = true;
         exibirCartaMaquina();
       }
@@ -141,5 +143,10 @@
         var nome = `<p class="carta-subtitle">${cartaMaquina.nome}</p>`;
       
         divCartaMaquina.innerHTML = nome + tagHTML + opcoesTexto + "</div>";
+      }
+
+      function jogaDeNovo(){
+          location.reload();
+
       }
     // });
