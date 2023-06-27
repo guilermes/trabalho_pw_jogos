@@ -16,9 +16,26 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>
-    <link href="css/index.css" rel="stylesheet">
-    <link href="js.js">
+    <link href="/css/index.css" rel="stylesheet">
+    <link href="/javascript/js.js">
     <title>Nossa página de jogos</title>
+
+    <style>
+        
+  .card-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .card-body img {
+    align-self: center;
+    border-radius: 200px;
+    box-shadow: 0 10px 8px rgba(0, 0, 0, 0.4);
+  }
+  
+    </style>
 </head>
 
 <body>
@@ -46,7 +63,7 @@
                             <a class="nav-link" href="futebol/">Adivinha o Time escolhido</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="random_numero/">Adivinhe o número que o PC escolheu</a>
+                            <a class="nav-link" href="random_numero/">Mentalista</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="super_trunfo/">Super-Trunfo</a>
@@ -71,15 +88,6 @@
                 </form>
             </div>
         </nav>
-        
-        <!-- light/dark mode switch -->
-        <div>
-            <!-- Rounded switch -->
-            <label class="switch" >
-                <input type="checkbox">
-                <span class="slider round"></span>
-            </label>
-        </div>
 
     </br>
         
@@ -88,11 +96,11 @@
             <div class="row">
                 <div class="col-3">
                     <div class="accordion" id="accordionExample">
-                        <div class="card" style="background-color: blue;">
-                        <div class="card-header" id="headingOne" style="background-color: black;">
+                        <div class="card" style="background-color: rgba(52, 52, 255, 0.463);">
+                        <div class="card-header" id="headingOne" style="background-color: rgb(49, 49, 49);">
                             <h5 class="mb-0">
-                            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseOne" aria-controls="collapseOne">
-                            Gabriel
+                            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseOne" aria-controls="collapseOne" aria-espanded="false">
+                            Gabriel Gassner
                             </button>
                             </h5>
                         </div>
@@ -101,48 +109,52 @@
                             <div class="card-body">
                             <img src="imagens/Gabriel.png" width="300px">
                             </div>
+                            <span>Presidente</span>
                         </div>
                         </div>
                         <div class="card">
                         <div class="card-header" id="headingTwo">
                             <h5 class="mb-0">
                             <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                Rodrigo
+                                Guilherme Nobrega
                             </button>
                             </h5>
                         </div>
                         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
                             <div class="card-body">
-                            <img src="imagens/Rodrigo.png"width="300px">
+                            <img src="imagens/Guilherme.png"width="300px">
                             </div>
+                            <span>Nosso front</span>
                         </div>
                         </div>
                         <div class="card">
                         <div class="card-header" id="headingThree">
                             <h5 class="mb-0">
                             <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                Guilherme
+                                Rhuan Lima
                             </button>
                             </h5>
                         </div>
                         <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
                             <div class="card-body">
-                            <img src="imagens/Guilherme.png"width="300px">
+                            <img src="imagens/Rhuan.png"width="300px">
                             </div>
+                            <span>Descansou</span>
                         </div>
                         </div>
                         <div class="card">
                             <div class="card-header" id="headingfour">
                             <h5 class="mb-0">
                                 <button class="btn btn-primary" type="button"  data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                Rhuan
+                                Rodrigo Rodrigues
                                 </button>
                             </h5>
                             </div>
                             <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
                             <div class="card-body">
-                                <img src="imagens/Rhuan.png"width="300px">
+                                <img src="imagens/Rodrigo.png"width="300px">
                             </div>
+                            <span>Escolheu a paleta de cores do site Correios</span>
                             </div>
                         </div>
                     </div>
@@ -151,65 +163,10 @@
         </div>
 
     </br>
-
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-3">
-
-                    <p>
-                        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">
-                          Rodrigo
-                        </button>
-
-                        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
-                            Rhuan
-                          </button>
-
-                          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3">
-                            Guilherme
-                          </button>
-
-                          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample4">
-                            Gabriel
-                          </button>
-                    </p>
-                    <div class="collapse" id="collapseExample1">
-                        <div class="card card-body">
-                            <img src="imagens/Rodrigo.png">
-                        </div>
-                    </div>
-
-                    <div class="collapse" id="collapseExample2">
-                        <div class="card card-body">
-                            <img src="imagens/Rhuan.png">
-                        </div>
-                    </div>
-
-                    <div class="collapse" id="collapseExample3">
-                        <div class="card card-body">
-                            <img src="imagens/Guilherme.png">
-                        </div>
-                    </div>
-
-                    <div class="collapse" id="collapseExample4">
-                        <div class="card card-body">
-                          <img src="imagens/Gabriel.png">
-                        </div>
-                    </div>
-
-
-
-                </div>
-            </div>
-        </div>
-
-
-
-
 	<!-- jQuery, Popper.js, Bootstrap JS -->	
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-	<script src="js/bootstrap.min.js"></script>
+	<script src="javascript/bootstrap.min.js"></script>
 			
 			
 			
