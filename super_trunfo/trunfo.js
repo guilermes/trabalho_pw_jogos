@@ -61,7 +61,6 @@
       
         document.getElementById("btnSortear").disabled = true;
         document.getElementById("btnJogar").disabled = false;
-        document.getElementById("btnJogaDnv").disabled = false;
         exibirCartaJogador();
       }
       
@@ -96,12 +95,10 @@
         }
         divResultado.innerHTML = htmlResultado;
       
-        document.getElementById("btnJogar").disabled = true;
-        document.getElementById("btnJogar").disabled = true;
-        exibirCartaMaquina();
-      
         jogoFinalizado = true; // Define o estado do jogo como finalizado
         habilitarJogaDeNovo(); // Verifica se a função jogaDeNovo() deve ser habilitada
+        document.getElementById("btnJogar").disabled = true;
+        exibirCartaMaquina();
       }
       
       function habilitarJogaDeNovo() {
@@ -111,11 +108,49 @@
       }
       
       function exibirCartaJogador() {
-        // Resto do código
-      }
+          var divCartaJogador = document.getElementById("carta-jogador");
+          divCartaJogador.style.backgroundImage = `url(${cartaJogador.imagem})`;
+          // divCartaJogador.style.backgroundImage = "url(" + cartaJogador.imagem + ")"
+          
+          var tagHTML = "<div id='opcoes' class='carta-status'>";
+        
+          var opcoesTexto = "";
+          for (var atributo in cartaJogador.atributos) {
+            opcoesTexto +=
+              "<input type='radio' name='atributo' value='" +
+              atributo +
+              "'>" +
+              atributo +
+              " " +
+              cartaJogador.atributos[atributo] +
+              "<br>";
+          }
+          var nome = `<p class="carta-subtitle">${cartaJogador.nome}</p>`;
+        
+          divCartaJogador.innerHTML = nome + tagHTML + opcoesTexto + "</div>";
+        }
       
       function exibirCartaMaquina() {
-        // Resto do código
+        var divCartaMaquina = document.getElementById("carta-maquina");
+        divCartaMaquina.style.backgroundImage = `url(${cartaMaquina.imagem})`;
+        // divCartaJogador.style.backgroundImage = "url(" + cartaJogador.imagem + ")"
+        
+        var tagHTML = "<div id='opcoes' class='carta-status'>";
+      
+        var opcoesTexto = "";
+        for (var atributo in cartaMaquina.atributos) {
+          opcoesTexto +=
+            "<p type='text' name='atributo' value='" +
+            atributo +
+            "'>" +
+            atributo +
+            " " +
+            cartaMaquina.atributos[atributo] +
+            "</p>";
+        }
+        var nome = `<p class="carta-subtitle">${cartaMaquina.nome}</p>`;
+      
+        divCartaMaquina.innerHTML = nome + tagHTML + opcoesTexto + "</div>";
       }
       
       function jogaDeNovo() {
@@ -148,51 +183,8 @@
       //   exibirCartaMaquina();
       // }
       
-      // function exibirCartaJogador() {
-      //   var divCartaJogador = document.getElementById("carta-jogador");
-      //   divCartaJogador.style.backgroundImage = `url(${cartaJogador.imagem})`;
-      //   // divCartaJogador.style.backgroundImage = "url(" + cartaJogador.imagem + ")"
-        
-      //   var tagHTML = "<div id='opcoes' class='carta-status'>";
       
-      //   var opcoesTexto = "";
-      //   for (var atributo in cartaJogador.atributos) {
-      //     opcoesTexto +=
-      //       "<input type='radio' name='atributo' value='" +
-      //       atributo +
-      //       "'>" +
-      //       atributo +
-      //       " " +
-      //       cartaJogador.atributos[atributo] +
-      //       "<br>";
-      //   }
-      //   var nome = `<p class="carta-subtitle">${cartaJogador.nome}</p>`;
       
-      //   divCartaJogador.innerHTML = nome + tagHTML + opcoesTexto + "</div>";
-      // }
-      
-      // function exibirCartaMaquina() {
-      //   var divCartaMaquina = document.getElementById("carta-maquina");
-      //   divCartaMaquina.style.backgroundImage = `url(${cartaMaquina.imagem})`;
-      //   // divCartaJogador.style.backgroundImage = "url(" + cartaJogador.imagem + ")"
-        
-      //   var tagHTML = "<div id='opcoes' class='carta-status'>";
-      
-      //   var opcoesTexto = "";
-      //   for (var atributo in cartaMaquina.atributos) {
-      //     opcoesTexto +=
-      //       "<p type='text' name='atributo' value='" +
-      //       atributo +
-      //       "'>" +
-      //       atributo +
-      //       " " +
-      //       cartaMaquina.atributos[atributo] +
-      //       "</p>";
-      //   }
-      //   var nome = `<p class="carta-subtitle">${cartaMaquina.nome}</p>`;
-      
-      //   divCartaMaquina.innerHTML = nome + tagHTML + opcoesTexto + "</div>";
-      // }
 
       // function jogaDeNovo(){
       //     location.reload();
