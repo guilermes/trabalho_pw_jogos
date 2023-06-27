@@ -1,9 +1,9 @@
 
 // document.addEventListener("DOMContentLoaded", function() {
-    var cartaPaulo = {
-        nome: "Shiryu de dragão",
+    var cartaGui = {
+        nome: "Motoqueiro Fantasma",
         imagem:
-          "http://pm1.narvii.com/6399/96fdb9d4fe6a9e72b9bc60ad418e3c43795e53b4_00.jpg",
+          "https://images.alphacoders.com/619/619885.jpg",
         atributos: {
           ataque: 5,
           defesa: 9,
@@ -11,9 +11,9 @@
         }
       };
       
-      var cartaRafa = {
-        nome: "Bulbasauro",
-        imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png",
+      var cartaRo = {
+        nome: "Batman",
+        imagem: "https://images3.alphacoders.com/129/1297317.jpg",
         atributos: {
           ataque: 7,
           defesa: 8,
@@ -21,10 +21,21 @@
         }
       };
       
-      var cartaGui = {
+      var cartaRhu = {
+        nome: "Wolverine",
+        imagem:
+          "https://images5.alphacoders.com/338/338157.jpg",
+        atributos: {
+          ataque: 9,
+          defesa: 8,
+          magia: 2
+        }
+      };
+
+      var cartaGa = {
         nome: "Darth Vader",
         imagem:
-          "https://images-na.ssl-images-amazon.com/images/I/41i-0NH0q9L._SX328_BO1,204,203,200_.jpg",
+          "https://images3.alphacoders.com/124/1248084.jpg",
         atributos: {
           ataque: 9,
           defesa: 8,
@@ -34,16 +45,16 @@
       
       var cartaMaquina;
       var cartaJogador;
-      var cartas = [cartaPaulo, cartaRafa, cartaGui];
+      var cartas = [cartaGui, cartaRo, cartaRhu, cartaGa];
       // 0          1           2
       
       function sortearCarta() {
-        var numeroCartaMaquina = parseInt(Math.random() * 3);
+        var numeroCartaMaquina = parseInt(Math.random() * 4);
         cartaMaquina = cartas[numeroCartaMaquina];
       
-        var numeroCartaJogador = parseInt(Math.random() * 3);
+        var numeroCartaJogador = parseInt(Math.random() * 4);
         while (numeroCartaJogador == numeroCartaMaquina) {
-          numeroCartaJogador = parseInt(Math.random() * 3);
+          numeroCartaJogador = parseInt(Math.random() * 4);
         }
         cartaJogador = cartas[numeroCartaJogador];
         console.log(cartaJogador);
