@@ -1,8 +1,7 @@
 body {
     font-family: "Roboto Mono", monospace;
     min-height: 854px;
-    background-image: url("https://www.alura.com.br/assets/img/imersoes/dev-2021/dia-07-super-trunfo-bg.png");
-    background-color: #000000;
+    background-color: #BCB8B8;
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
@@ -15,7 +14,7 @@ body {
   }
   
   .page-title {
-    color: #ffffff;
+    color: #4747CF;
     margin: 5px 0;
   }
   
@@ -29,7 +28,7 @@ body {
   }
   
   h2 {
-    color: white;
+    color: #4747CF;
   }
   
   #carta-jogador,
@@ -43,11 +42,14 @@ body {
     display: flex;
     align-items: flex-end;
     position: relative;
-    background-size: 350px 300px;
-    background-repeat: no-repeat;
-    background-position-x: 5px;
-    background-position-y: 10px;
-    border-radius: 33px;
+    padding: 20px;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.9px);
+    -webkit-backdrop-filter: blur(7.9px);
+    border: 1px solid rgba(255, 255, 255, 0.46);
   }
   
   
@@ -62,14 +64,14 @@ body {
   }
   
   .carta-imagem img {
-    width: 80%;
-    height: 80%;
+    width: 50%;
+    height: 40%;
   }
   
   .carta-status {
     height: 160px;
     margin: 2rem;
-    color: white;
+    color: #4747CF;
     z-index: 2;
   }
   
@@ -78,7 +80,7 @@ body {
   }
   
   .resultado {
-    color: white;
+    color: #4747CF;
     font-size: 2rem;
     text-transform: uppercase;
     font-weight: bolder;
@@ -103,6 +105,7 @@ body {
   }
   
   .carta-subtitle {
+    color: #4747CF;
     z-index: 2;
     position: absolute;
     top: 16px;
@@ -126,7 +129,7 @@ body {
     align-content: center;
     height: 160px;
     margin: 2rem;
-    color: white;
+    color: #4747CF;
     z-index: 2;
   }
   
@@ -135,5 +138,5 @@ body {
   }
 
   .resultado-final {
-    color: azure;
+    color: #4747CF;
   }
