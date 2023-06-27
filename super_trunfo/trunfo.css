@@ -133,3 +133,7 @@ body {
   .valorMaquina p {
     margin: 20px 10px;
   }
+
+  .resultado-final {
+    color: azure;
+  }
