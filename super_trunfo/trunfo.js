@@ -73,7 +73,9 @@
           }
         }
       }
-      
+
+      var jogoFinalizado = false;
+
       function jogar() {
         console.log("chamou");
         var atributoSelecionado = obtemAtributoSelecionado();
@@ -97,56 +99,103 @@
         document.getElementById("btnJogar").disabled = true;
         document.getElementById("btnJogar").disabled = true;
         exibirCartaMaquina();
+      
+        jogoFinalizado = true; // Define o estado do jogo como finalizado
+        habilitarJogaDeNovo(); // Verifica se a função jogaDeNovo() deve ser habilitada
+      }
+      
+      function habilitarJogaDeNovo() {
+        if (jogoFinalizado) {
+          document.getElementById("btnJogarNovamente").disabled = false;
+        }
       }
       
       function exibirCartaJogador() {
-        var divCartaJogador = document.getElementById("carta-jogador");
-        divCartaJogador.style.backgroundImage = `url(${cartaJogador.imagem})`;
-        // divCartaJogador.style.backgroundImage = "url(" + cartaJogador.imagem + ")"
-        
-        var tagHTML = "<div id='opcoes' class='carta-status'>";
-      
-        var opcoesTexto = "";
-        for (var atributo in cartaJogador.atributos) {
-          opcoesTexto +=
-            "<input type='radio' name='atributo' value='" +
-            atributo +
-            "'>" +
-            atributo +
-            " " +
-            cartaJogador.atributos[atributo] +
-            "<br>";
-        }
-        var nome = `<p class="carta-subtitle">${cartaJogador.nome}</p>`;
-      
-        divCartaJogador.innerHTML = nome + tagHTML + opcoesTexto + "</div>";
+        // Resto do código
       }
       
       function exibirCartaMaquina() {
-        var divCartaMaquina = document.getElementById("carta-maquina");
-        divCartaMaquina.style.backgroundImage = `url(${cartaMaquina.imagem})`;
-        // divCartaJogador.style.backgroundImage = "url(" + cartaJogador.imagem + ")"
+        // Resto do código
+      }
+      
+      function jogaDeNovo() {
+        location.reload();
+      }
+      
+      
+      // function jogar() {
+      //   console.log("chamou");
+      //   var atributoSelecionado = obtemAtributoSelecionado();
+      //   var divResultado = document.getElementById("resultado");
+      
+      //   if (
+      //     cartaJogador.atributos[atributoSelecionado] >
+      //     cartaMaquina.atributos[atributoSelecionado]
+      //   ) {
+      //     htmlResultado = "<h1 class='resultado-final'>Venceu</h1>";
+      //   } else if (
+      //     cartaJogador.atributos[atributoSelecionado] <
+      //     cartaMaquina.atributos[atributoSelecionado]
+      //   ) {
+      //     htmlResultado = "<h1 class='resultado-final'>Perdeu</h1>";
+      //   } else {
+      //     htmlResultado = "<h1 class='resultado-final'>Empatou</h1>";
+      //   }
+      //   divResultado.innerHTML = htmlResultado;
+      
+      //   document.getElementById("btnJogar").disabled = true;
+      //   document.getElementById("btnJogar").disabled = true;
+      //   exibirCartaMaquina();
+      // }
+      
+      // function exibirCartaJogador() {
+      //   var divCartaJogador = document.getElementById("carta-jogador");
+      //   divCartaJogador.style.backgroundImage = `url(${cartaJogador.imagem})`;
+      //   // divCartaJogador.style.backgroundImage = "url(" + cartaJogador.imagem + ")"
         
-        var tagHTML = "<div id='opcoes' class='carta-status'>";
+      //   var tagHTML = "<div id='opcoes' class='carta-status'>";
       
-        var opcoesTexto = "";
-        for (var atributo in cartaMaquina.atributos) {
-          opcoesTexto +=
-            "<p type='text' name='atributo' value='" +
-            atributo +
-            "'>" +
-            atributo +
-            " " +
-            cartaMaquina.atributos[atributo] +
-            "</p>";
-        }
-        var nome = `<p class="carta-subtitle">${cartaMaquina.nome}</p>`;
+      //   var opcoesTexto = "";
+      //   for (var atributo in cartaJogador.atributos) {
+      //     opcoesTexto +=
+      //       "<input type='radio' name='atributo' value='" +
+      //       atributo +
+      //       "'>" +
+      //       atributo +
+      //       " " +
+      //       cartaJogador.atributos[atributo] +
+      //       "<br>";
+      //   }
+      //   var nome = `<p class="carta-subtitle">${cartaJogador.nome}</p>`;
       
-        divCartaMaquina.innerHTML = nome + tagHTML + opcoesTexto + "</div>";
-      }
+      //   divCartaJogador.innerHTML = nome + tagHTML + opcoesTexto + "</div>";
+      // }
+      
+      // function exibirCartaMaquina() {
+      //   var divCartaMaquina = document.getElementById("carta-maquina");
+      //   divCartaMaquina.style.backgroundImage = `url(${cartaMaquina.imagem})`;
+      //   // divCartaJogador.style.backgroundImage = "url(" + cartaJogador.imagem + ")"
+        
+      //   var tagHTML = "<div id='opcoes' class='carta-status'>";
+      
+      //   var opcoesTexto = "";
+      //   for (var atributo in cartaMaquina.atributos) {
+      //     opcoesTexto +=
+      //       "<p type='text' name='atributo' value='" +
+      //       atributo +
+      //       "'>" +
+      //       atributo +
+      //       " " +
+      //       cartaMaquina.atributos[atributo] +
+      //       "</p>";
+      //   }
+      //   var nome = `<p class="carta-subtitle">${cartaMaquina.nome}</p>`;
+      
+      //   divCartaMaquina.innerHTML = nome + tagHTML + opcoesTexto + "</div>";
+      // }
 
-      function jogaDeNovo(){
-          location.reload();
+      // function jogaDeNovo(){
+      //     location.reload();
 
-      }
+      // }
     // });
