@@ -55,3 +55,8 @@ function respostas(){
 		 
 		} else alert("Você não escolheu nada !!!")
  }
+
+ function mudaTema() {
+    document.body.classList.toggle("dark");
+    console.log("mudou")
+  }

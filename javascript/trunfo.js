@@ -156,6 +156,11 @@
       function jogaDeNovo() {
         location.reload();
       }
+
+      function mudaTema() {
+        document.body.classList.toggle("dark");
+        console.log("mudou")
+      }
       
       
       // function jogar() {

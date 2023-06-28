@@ -17,7 +17,7 @@
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>
     <link href="../css/style.css" rel="stylesheet">
-    <link href="js.js">
+    <script type="text/javascript" src="js.js"></script>
     <title>Adivinha o número que a máquina pensou</title>
 </head>
 
@@ -71,6 +71,15 @@
                 </form>
             </div>
         </nav>
+
+        <div class="container-fluid botao">
+            <!-- Rounded switch -->
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round" onclick="mudaTema()"></span>
+             </label>
+        </div>
+
     <div class="container text-center">
     <h1>Adivinhe o número!</h1>
 
@@ -106,6 +115,7 @@
                 document.getElementById('resultText').textContent = 'Parabéns! Você acertou o número!';
             }
         }
+        
     </script>
     </div>
 </body>
